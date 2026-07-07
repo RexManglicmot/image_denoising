@@ -1,11 +1,11 @@
 from pathlib import Path
 import torch
 
-
-# Project paths
-
+# VERY IMPORTANT
+# Set the project path to be the root of the directory
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
+# Project paths
 DATA_DIR = PROJECT_ROOT / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
@@ -29,12 +29,12 @@ NUM_EPOCHS =  40 # 20 # was 2 # was 20
 LEARNING_RATE = 1e-4
 WEIGHT_DECAY = 0.0
 
+# This split is a good balanced split
 TRAIN_SPLIT = 0.8
 VAL_SPLIT = 0.1
 TEST_SPLIT = 0.1
 
 # Model settings
-
 MODEL_NAME = "dncnn"
 IN_CHANNELS = 3
 OUT_CHANNELS = 3
